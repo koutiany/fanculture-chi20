@@ -129,7 +129,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Data</h2>
+          <h2>Data-Overlook</h2>
           <p>Data is provided by ZIS.</p>
         </div>
 
@@ -175,8 +175,6 @@
     <div id="curve_chart" style="width: 900px; height: 500px"></div>
   </body>
 
-
-
           </div>
 
         </div>
@@ -184,72 +182,111 @@
       </div>
     </section><!-- End Our Skills Section -->
 
-    <!-- ======= Tetstimonials Section ======= -->
+    <!-- ======= Tetstimonials Section and I changed it to sth else, but I have to keep this name because I am so scared to change the class names ======= -->
     <section class="testimonials" data-aos="fade-up">
       <div class="container">
 
         <div class="section-title">
-          <h2>Tetstimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Data in Details I</h2>
+          <p>Let's take a closer look at the fans that are categorized in the B section.</p>
         </div>
 
-        <div class="owl-carousel testimonials-carousel">
+        <div class="skills-content">
+        <p>Unlike Category A and C, fans that are listed in this category often overlooked. They are not as violent-oriented as Category C but they could also the trouble makers. When they are not happy with the game result or the referees, they tend to let their anger out through the violent form. Furthermore, their anger often comes out under the influence of alcohol as well.</p>
+          <head>
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load('current', {'packages':['bar']});
+              google.charts.setOnLoadCallback(drawChart);
 
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Year', 'Bundesliga', '3.Liga', 'Regionalliga'],
+                  ['06/07', 6105, 0000, 2445],
+                  ['07/08', 5860, 0000, 3238],
+                  ['08/09', 5785, 0000, 2206],
+                  ['09/10', 6470, 2360, 2242],
+                  ['10/11', 7240, 2395, 1673],
+                  ['11/12', 8480, 1810, 2144],
+                  ['12/13', 7810, 2435, 2773],
+                  ['13/14', 7988, 2300, 3041],
+                  ['14/15', 7458, 2696, 3202],
+                  ['15/16', 7205, 2987, 2819],
+                  ['16/17', 7817, 2750, 3332],
+                  ['17/18', 7764, 2581, 3375]
+                ]);
 
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
+                var options = {
+                  chart: {
+                    title: 'Kategorie B',
+                    subtitle: 'Category B fans in different leagues',
+                  }
+                };
 
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
+                var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
 
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+              }
+            </script>
+          </head>
+          <body>
+            <div id="columnchart_material" style="width: 1200px; height: 500px;"></div>
+          </body>
+        </div>
 
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
+      </div>
+    </section><!-- End Ttstimonials Section -->
 
+    <!-- ======= Tetstimonials Section and I changed it to sth else, but I have to keep this name because I am so scared to change the class names ======= -->
+    <section class="testimonials" data-aos="fade-up">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Data in Details II</h2>
+          <p>Category C</p>
+        </div>
+
+        <div class="skills-content">
+        <p>Category C fans are generally violent-oriented.</p>
+          <head>
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load('current', {'packages':['bar']});
+              google.charts.setOnLoadCallback(drawChart);
+
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Year', 'Bundesliga', '3.Liga', 'Regionalliga'],
+                  ['06/07', 2308, 000, 878],
+                  ['07/08', 2185, 000, 798],
+                  ['08/09', 2125, 000, 686],
+                  ['09/10', 2290, 680, 661],
+                  ['10/11', 2445, 629, 557],
+                  ['11/12', 2893, 526, 636],
+                  ['12/13', 2607, 688, 907],
+                  ['13/14', 2554, 746, 935],
+                  ['14/15', 2419, 882, 961],
+                  ['15/16', 2532, 931, 952],
+                  ['16/17', 2800, 843, 1131],
+                  ['17/18', 2589, 699, 1323]
+                ]);
+
+                var options = {
+                  chart: {
+                    title: 'Kategorie C',
+                    subtitle: 'Category C fans in different leagues',
+                  }
+                };
+
+                var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+              }
+            </script>
+          </head>
+          <body>
+            <div id="columnchart_material" style="width: 1200px; height: 500px;"></div>
+          </body>
         </div>
 
       </div>
